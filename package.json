@@ -1,0 +1,6 @@
+{
+    "scripts": {
+      "php_build": "php compile.php && php compile.php && echo Файлы успешно обновлены! && echo.",
+      "Page_build":"php Page_builder.php echo."
+    }
+  }

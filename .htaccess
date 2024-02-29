@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# Переадресация GET-запроса с i=1 на корень
+RewriteCond %{QUERY_STRING} ^i=1$
+RewriteRule ^$ /? [L,R=301]
+
+# Остальные правила
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]

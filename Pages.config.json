@@ -1,0 +1,23 @@
+{
+    "include-in-controller":"",
+    "controller-function":{
+        "Private":"",
+        "Public":"",
+        "Users":""
+    },
+    "Page-template":"base",
+    "Pages":[
+        {
+            "name_file":"Regions.php",
+            "url":"Regions/(([a-zA-Z0-9_-]+)|)",
+            "controller":"Public",
+            "name_func":"Regions"
+        },
+        {
+            "name_file":"System.php",
+            "url":"System/([a-zA-Z0-9_-]+)",
+            "controller":"Public",
+            "name_func":"System"
+        }
+    ]
+}
